@@ -1,10 +1,22 @@
 class Produtos:
-    def __init__(self, cod):
-        self.cod = cod
+
+    def __init__(self, product, quantity, price):
+        self.product = str(product)
+        self.quantity = int(quantity)
+        self.price = float(price)
 
 def main():
     print("Bem-vindo a LearnStore!")
-    menu_principal()
+    #   menu_principal()
+    
+    #   Testando a inserir coisas a lista
+    produtos = []
+    produtos.append(Produtos('Maçã', 10, 2.58))
+    produtos.append(Produtos('Laranja', 10, 5.98))
+    produtos.append(Produtos('Manga', 10, 4.23))
+    
+    for i in produtos:
+        print(i.product, i.quantity, i.price)
 
 def add(aux):
     pass
