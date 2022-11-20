@@ -1,14 +1,24 @@
 import random
 
 class Produtos:
-
-    produtos = []
+    
     
     def __init__(self, product, quantity, price):
         self.product = str(product)
         self.quantity = int(quantity)
         self.price = float(price)
-
+    
+    #   Testando a inserir coisas a lista
+    produtos = []
+    produtos.append('Maçã', 10, 2.58)
+    produtos.append('Laranja', 10, 5.98)
+    produtos.append('Manga', 10, 4.23)
+    
+    def verifica_list(list_cliente, list_product):
+        for i in list_cliente:
+            if(list_cliente[i] == list_cliente[i]):
+                print(list_product[i])
+        
 def add(aux):
     pass
 
@@ -20,11 +30,11 @@ def finish():
 
 def cancel():
     print("\nSua compra foi cancelada! Obrigado por nos visitar, até a próxima!\n")
-    
+
 def add_product(list, product):
     list = []
     quantity = 15
-    price = random.uniform(3, 9.9)
+    price = random.uniform(2, 9.9)
     list.append(Produtos(product, quantity, price))
 
 def menu_principal(list):
@@ -57,11 +67,6 @@ def main():
     print("Bem-vindo a LearnStore!")
     menu_principal(listCliente)
     
-    #   Testando a inserir coisas a lista
-    produtos = []
-    produtos.append(Produtos('Maçã', 10, 2.58))
-    produtos.append(Produtos('Laranja', 10, 5.98))
-    produtos.append(Produtos('Manga', 10, 4.23))
     
     for i in produtos:
         print(i.product, i.quantity, i.price)
