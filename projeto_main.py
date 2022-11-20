@@ -47,6 +47,10 @@ def menu_principal():
             case 3:
                 finish()
                 x = False
+            case 4:
+                #   Adicionar produtos
+                #   Usar o random.uniform(a, b)
+                pass
             case default:
                 print("\nCódigo inválido! Por favor, insira o código correspondente.\n")
                 pass
