@@ -3,7 +3,8 @@ import random
 class Produtos:
     
     
-    def __init__(self, product, quantity, price):
+    def __init__(self, id, product, quantity, price):
+        self.id = int(id)
         self.product = str(product)
         self.quantity = int(quantity)
         self.price = float(price)
