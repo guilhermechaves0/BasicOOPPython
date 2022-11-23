@@ -17,7 +17,7 @@ def app():
 
   while True:
       print('Select the option below which you want to do:')
-      option = int(input('1 - Add product to cart\n2 - Remove product from cart\n3 - Show cart\n5 - Finish\n6 - Cancel\n7 - Exit\n'))
+      option = int(input('1 - Add product to cart\n2 - Remove product from cart\n3 - Show cart\n4 - Finish\n5 - Cancel\n6 - Exit\n'))
 
       if (option == 1):
         loja.show_store()
@@ -51,14 +51,14 @@ def app():
           print('Invalid product id')
       elif(option == 3):
         loja.show_cart()
-      elif(option == 5):
+      elif(option == 4):
         loja.show_cart()
         print('Thank you for your purchase!')
         break
-      elif(option == 6):
+      elif(option == 5):
         loja.cancel()
         pass
-      elif(option == 7):
+      elif(option == 6):
         loja.cancel()
         loja.show_cart()
         loja.show_store()
