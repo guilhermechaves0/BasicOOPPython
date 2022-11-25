@@ -14,7 +14,6 @@ def app():
   loja.store.add_product(Product(3, 'Calça Jeans', 129.90, 5))
   loja.store.add_product(Product(4, 'Calça Skinny Rosa', 119.90, 5))
 
-
   while True:
       print('Select the option below which you want to do:')
       option = int(input('1 - Add product to cart\n2 - Remove product from cart\n3 - Show cart\n4 - Finish\n5 - Cancel\n6 - Exit\n'))
@@ -49,6 +48,7 @@ def app():
           loja.remove_product_from_cart(produto4)
         else:
           print('Invalid product id')
+          
       elif(option == 3):
         loja.show_cart()
       elif(option == 4):
